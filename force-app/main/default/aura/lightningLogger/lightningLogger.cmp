@@ -1,4 +1,4 @@
-<aura:component extensible="true" abstract="true" controller="LightningLoggerController">
+<aura:component extensible="true" controller="LightningLoggerController">
     <aura:attribute name="isLightningDebugModeEnabled" type="Boolean" default="false" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <aura:if isTrue="{!v.isLightningDebugModeEnabled}">
