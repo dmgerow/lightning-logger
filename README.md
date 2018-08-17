@@ -6,6 +6,8 @@ A framework for enabling logging within Lightning Components.
 
 Adding the lightingLogger component and related apex classes, extending that component to any additional components will allow a developer to toggle their console.log messages with a checkbox per user. This allows a clickable way to remove any unnecessary console.log messages for users not being used for testing/debugging purposes.
 
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com/)
+
 ## How to Use
 
 ### In the Component (.cmp) file
