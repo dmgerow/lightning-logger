@@ -12,6 +12,7 @@ Adding the lightingLogger component and related apex classes, extending that com
 
 ```[html]
 <aura:component extends="c:lightningLogger">
+    <!-- need to let the lightning logger component load first with debug status -->
     <aura:handler name="change" value="{!v.isLoaded}" action="{!c.doInit}"/>
 
 </aura:component>
@@ -22,9 +23,11 @@ Adding the lightingLogger component and related apex classes, extending that com
 ```[javascript]
 ({
     doInit : function(component, event, helper) {
+        // represents a console.log('msg') type log
         helper.log(component, 'basic log message!');
+
+        // represents a console.log('msg', obj) type log
         helper.log(component, 'logger should console an object?', component);
-        helper.helperMethod(component);
     }
 })
 ```
