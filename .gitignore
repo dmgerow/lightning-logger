@@ -1,2 +1,5 @@
 .vscode
 .sfdx
+force-app/main/default/aura/exampleComponent
+force-app/main/default/flexipages
+force-app/main/default/settings

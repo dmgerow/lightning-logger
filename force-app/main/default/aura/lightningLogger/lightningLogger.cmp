@@ -1,7 +1,8 @@
 <aura:component extensible="true" controller="LightningLoggerController">
-    <aura:attribute name="isLightningDebugModeEnabled" type="Boolean" default="false" />
+    <aura:attribute name="isLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="isLightningDebugModeEnabled" type="Boolean" default="false"/>
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
-    <aura:if isTrue="{!v.isLightningDebugModeEnabled}">
-        <p><lightning:formattedText value="Debug mode enabled." /></p>
-    </aura:if>
+    <div>
+        {!v.body}
+    </div>
 </aura:component>
